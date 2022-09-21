@@ -1,11 +1,17 @@
 """
 トーチの勉強
+
+tensorflowと共存するやつ
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+CUDA 11.2 cuDNN8.1
 """
 
 import torch
 import numpy as np
 
 ### テンソルについて
+
+# 型は小数がfloat32, 整数がint64
 
 # 直接作る
 tensor = torch.tensor([[1, 2], [3, 4]])
